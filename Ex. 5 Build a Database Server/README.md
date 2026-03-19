@@ -2,9 +2,8 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: HEMNATH R
+* **Register Number**: 212224240057
 
 ---
 
@@ -81,14 +80,11 @@ Test the database server by connecting to it locally or remotely and performing 
 ---
 
 ## Workflow (Student Explanation)
-
-(Write the steps you followed in your own words)
-
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. First, a security group named DB Security Group was created to allow the web server to connect to the database using port 3306 (MySQL).
+2. A DB Subnet Group was created with subnets from two Availability Zones to allow the database to run in a Multi-AZ environment for high availability.
+3. A MySQL RDS instance named lab-db was created with the database name lab, username main, and password lab-password.
+4. The database was associated with the DB Security Group and the Lab VPC so that the web server can securely connect to the database.
+5. The web application running on the EC2 server was opened using its IP address, and the RDS endpoint, database name, username, and password were entered to interact with the database.
 
 ---
 
@@ -96,19 +92,20 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
+<img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/06ab03f0-d257-4205-b9b4-c2bfc1b9eff9" />
 
 ---
 
 ### Screenshot 2: Database Service Running
 
-(Insert Screenshot Here)
+<img width="1895" height="949" alt="image" src="https://github.com/user-attachments/assets/f2a59df7-2540-497d-abdf-39ecc02787af" />
+
 
 ---
 
 ### Screenshot 3: Sample Database and Table
 
-(Insert Screenshot Here)
+<img width="1910" height="1133" alt="image" src="https://github.com/user-attachments/assets/7dbc3bf9-d2b2-4a57-b4f6-2283c2d45bca" />
 
 ---
 
